@@ -1,19 +1,19 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "bereznii/php-teams-connector",
     "type": "library",
-    "description": ":package_description",
+    "description": "This package is used to easily interact with Microsoft Teams Connector API via Incoming Webhook, allowing to create notification channel",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "bereznii",
+        "php-teams-connector"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/bereznii/php-teams-connector",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
-            "role": "Developer"
+            "name": "Dmytro Bereznii",
+            "email": "bereznii.d@gmail.com",
+            "homepage": "https://bereznii.me",
+            "role": "Software Developer, PHP"
         }
     ],
     "require": {
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "bereznii\\php-teams-connector\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\": "tests"
+            "bereznii\\php-teams-connector\\": "tests"
         }
     },
     "scripts": {
