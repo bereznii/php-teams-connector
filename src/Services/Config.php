@@ -6,7 +6,9 @@ use Bereznii\TeamsConnector\Exceptions\ConfigFileNotFoundException;
 
 /**
  * Class Config
+ *
  * @package Bereznii\TeamsConnector\Services
+ * @author Dmytro Bereznii <bereznii.d@gmail.com>
  */
 class Config
 {
