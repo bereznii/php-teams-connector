@@ -20,7 +20,7 @@ $ composer require bereznii/php-teams-connector
 
 ``` php
 $card = new \Bereznii\TeamsConnector\Services\MessageCard();
-$card->setAppName('Synevo Spermogram Booking API')
+$card->setAppName('Your App')
     ->setMessage('Hello World')
     ->setContext(__METHOD__)
     ->setStatus('DEBUG');
