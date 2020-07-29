@@ -38,6 +38,11 @@ class MessageCard implements CardInterface
     private $config;
 
     /**
+     * @var array
+     */
+    private $imageUrl;
+
+    /**
      * TeamsRequest constructor.
      */
     public function __construct()
@@ -86,6 +91,16 @@ class MessageCard implements CardInterface
     }
 
     /**
+     * @param string $imageUrl
+     * @return MessageCard
+     */
+    public function setImage(string $imageUrl): MessageCard
+    {
+        $this->imageUrl = $imageUrl;
+        return $this;
+    }
+
+    /**
      * @return array
      */
     public function getPayload(): array
@@ -99,7 +114,7 @@ class MessageCard implements CardInterface
                 [
                     'activityTitle' => $this->appName,
                     'activitySubtitle' => 'Уведомление',
-                    "activityImage" => $this->config['activityImage'],
+                    "activityImage" => $this->imageUrl,
                     "facts" => [
                         [
                             "name" => "Статус:",

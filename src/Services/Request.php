@@ -18,12 +18,17 @@ class Request
     private $config;
 
     /**
+     * @var string
+     */
+    private $webhookUrl;
+
+    /**
      * @var CardInterface $card
      */
     private $card;
 
     /**
-     * Contain answer from $config['incoming_webhook_url'].
+     * Contain answer from Microsoft Teams Connector Incoming Webhook URL.
      *
      * @var bool|string
      */
@@ -33,15 +38,17 @@ class Request
      * TeamsRequest constructor.
      *
      * @param CardInterface $card
+     * @param string webhookUrl
      */
-    public function __construct(CardInterface $card)
+    public function __construct(CardInterface $card, string $webhookUrl)
     {
         $this->card = $card;
+        $this->webhookUrl = $webhookUrl;
         $this->config = (new Config())->get();
     }
 
     /**
-     * Get answer from $config['incoming_webhook_url'].
+     * Get answer from Microsoft Teams Connector Incoming Webhook URL.
      *
      * @return bool|string
      */
@@ -81,7 +88,7 @@ class Request
             CURLOPT_TIMEOUT         => 15
         ];
 
-        return $this->executeRequest($this->config['incoming_webhook_url'], $options);
+        return $this->executeRequest($this->webhookUrl, $options);
     }
 
     /**
