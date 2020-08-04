@@ -1,9 +1,7 @@
 # php-teams-connector
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Latest Version on Packagist][ico-version]](https://packagist.org/packages/bereznii/php-teams-connector)
 [![Software License][ico-license]](LICENSE.md)
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 The PHP package to easily interact with Microsoft Teams Connector API via Incoming Webhook.
 The goal is to provide user with ability to easily create his own message card and send them to desired channel.
