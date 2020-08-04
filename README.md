@@ -1,6 +1,6 @@
 # php-teams-connector
 
-[![Version](https://poser.pugx.org/bereznii/php-teams-connector/version)](//packagist.org/packages/bereznii/php-teams-connector)
+[![Latest Version on Packagist][ico-version]](https://packagist.org/packages/bereznii/php-teams-connector)
 [![Latest Unstable Version](https://poser.pugx.org/bereznii/php-teams-connector/v/unstable)](//packagist.org/packages/bereznii/php-teams-connector)
 [![License](https://poser.pugx.org/bereznii/php-teams-connector/license)](//packagist.org/packages/bereznii/php-teams-connector)
 [![Total Downloads](https://poser.pugx.org/bereznii/php-teams-connector/downloads)](//packagist.org/packages/bereznii/php-teams-connector)
